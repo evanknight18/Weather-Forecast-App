@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="text-center">Weather Dashboard</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Search for a City</h5>
+                        <input type="text" id="cityInput" class="form-control" placeholder="City name">
+                        <button id="searchBtn" class="btn btn-primary btn-danger mt-2">Search</button>
+                        <h5 class="card-title mt-3">Search History</h5>
+                        <ul id="searchHistory" class="list-group">
+                            <!-- Search history items will be added here -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title" id="currentCity">City Name (Date) <span id="weatherIconContainer"></span></h5>
+                        <p>Temperature: <span id="currentTemperature"></span> °F</p>
+                        <p>Humidity: <span id="currentHumidity"></span> %</p>
+                        <p>Wind Speed: <span id="currentWindSpeed"></span> m/s</p>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">5-Day Forecast</h5>
+                        <div id="forecast" class="row">
+                            <!-- 5-day forecast cards will be added here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
