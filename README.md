@@ -1,4 +1,4 @@
-# Weather-Forecast-App# Weather Dashboard
+# Weather-Forecast-App
 
 This is a simple weather dashboard that allows users to search for the current weather and a 5-day forecast for any city using the OpenWeather API. The app displays the temperature, humidity, and wind speed for both current weather and future forecasts. Additionally, a search history feature enables users to quickly revisit previous searches.
 
